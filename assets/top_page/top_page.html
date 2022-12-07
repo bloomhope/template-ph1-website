@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    link
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POSSE課題</title>
     <!-- スタイルシート読み込み -->
+    <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/style.css">
     <!-- Google Fonts読み込み -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,17 +20,29 @@
         <div class="header_logo">
             <img src="../img/logo.svg" alt="POSSE">
         </div>
-        <div>
-            <nav>
-                <ul>
-                    <li>
+        <div class="header_inner">
+            <nav class="header_nav">
+                <ul class="header_nav_list">
+                    <li class="header_nav_item">
                         <a href="top_page.html">POSSEとは</a>
                     </li>
-                    <li>
+                    <li class="header_nav_item">
                         <a href="quiz_page.html">クイズ</a>
                     </li>
                 </ul>
             </nav>
+            <ul class="header_sns">
+                <li class="header_sns_item">
+                    <a href="http://twitter.com/posse_program" target="_blank" rel="noopener noreferrer" class="header_sns_item_link">
+                        <i class="u-icon_twitter"></i>
+                    </a>
+                </li>
+                <li class="header_sns_item">
+                    <a href="http://www.instagram.com/posse_programing" target="_blank" rel="noopener noreferrer">
+                        <i class="u-icon_instagram"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
 </body>
