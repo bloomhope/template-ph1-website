@@ -14,7 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Plus+Jakarta+Sans:wght@400;700&display=swap"
         rel="stylesheet">
-    <script src="../assets/scripts/common.js" defer></script>
+    <script src="../quiz_page/quiz_page2.js" defer></script>
 </head>
 <body>
     <header>
@@ -55,8 +55,8 @@
             <p class="quiz_hero_subject">POSSE課題</p>
             <p class="quiz_hero_it">ITクイズ</p>
         </div>
-        <div class="quiz">
-            <div class="quiz1">
+        <div class="quiz" >
+            <div class="quiz1 js-quiz" data-quiz="0">
                 <div class="quiz_q">
                     <div class="quiz_q_title">Q1</div>
                     <p class="quiz_q_content">
@@ -69,17 +69,30 @@
                 <div class="quiz_a">
                     <div class="quiz_a_title">A</div>
                     <ul class="quiz_a_list">
-                        <li class="quiz_a_list1">約28万人<img src="../img/icon/icon-arrow.svg"></li>
-                        <li class="quiz_a_list2">約79万人<img src="../img/icon/icon-arrow.svg"></li>
-                        <li class="quiz_a_list3">約183万人<img src="../img/icon/icon-arrow.svg"></li>
+                        <li class="quiz_a_list1" data-answer="0">
+                            <button class="js-answer">約28万人<img src="../img/icon/icon-arrow.svg"></button>
+                        </li>
+                        <li class="quiz_a_list2" data-answer="1">
+                            <button class="js-answer">約79万人<img src="../img/icon/icon-arrow.svg"></button>
+                        </li>
+                        <li class="quiz_a_list3" data-answer="2">
+                            <button class="js-answer">約183万人<img src="../img/icon/icon-arrow.svg"></button>
+                        </li>
                     </ul>
+                    <div class="quiz_a_correct js-answerBox">
+                        <p class="quiz_a_correct_title js-answerTitle"></p>
+                        <p class="quiz_a_correct_content">
+                        <span class="quiz_a_correct_content_label">A</span>
+                        <span class="js-answerText"></span>
+                        </p>
+                    </div>
                 </div>
                 <div class="quiz_quote">
                     <img src="../img/icon/icon-note.svg">
                     <p>経済産業省 2019年3月 － IT 人材需給に関する調査</p>
                 </div>
             </div>
-            <div class="quiz2">
+            <div class="quiz2 js-quiz" data-quiz="1">
                 <div class="quiz_q">
                     <div class="quiz_q_title">Q2</div>
                     <p class="quiz_q_content">
@@ -92,12 +105,26 @@
                 <div class="quiz_a">
                     <div class="quiz_a_title">A</div>
                     <ul class="quiz_a_list">
-                        <li class="quiz_a_list1">INTECH<img src="../img/icon/icon-arrow.svg"></li>
-                        <li class="quiz_a_list2">BIZZTECH<img src="../img/icon/icon-arrow.svg"></li>
-                        <li class="quiz_a_list3">X-TECH<img src="../img/icon/icon-arrow.svg"></li>
+                        <li class="quiz_a_list1" data-answer="0">
+                            <button class="js-answer">INTECH<img src="../img/icon/icon-arrow.svg"></button>
+                        </li>
+                        <li class="quiz_a_list2" data-answer="1">
+                            <button class="js-answer">BIZZTECH<img src="../img/icon/icon-arrow.svg"></button>
+                        </li>
+                        <li class="quiz_a_list3" data-answer="2">
+                            <button class="js-answer">X-TECH<img src="../img/icon/icon-arrow.svg"></button>
+                        </li>
                     </ul>
+                    <div class="quiz_a_correct js-answerBox">
+                        <p class="quiz_a_correct_title js-answerTitle"></p>
+                        <p class="quiz_a_correct_content">
+                        <span class="quiz_a_correct_content_label">A</span>
+                        <span class="js-answerText"></span>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="quiz3">
+            <div class="quiz3 js-quiz" data-quiz="2">
                 <div class="quiz_q">
                     <div class="quiz_q_title">Q3</div>
                     <p class="quiz_q_content">
@@ -110,14 +137,26 @@
                 <div class="quiz_a">
                     <div class="quiz_a_title">A</div>
                     <ul class="quiz3_a_list">
-                        <li class="quiz_a_list1">Internet of Things<img src="../img/icon/icon-arrow.svg"></li>
-                        <li class="quiz_a_list2">Integrate into Technology<img src="../img/icon/icon-arrow.svg"></li>
-                        <li
-                        class="quiz_a_list3">Information on Tool<img src="../img/icon/icon-arrow.svg"></li>
+                        <li class="quiz_a_list1" data-answer="0">
+                            <button class="js-answer">Internet of Things<img src="../img/icon/icon-arrow.svg"></button>
+                        </li>
+                        <li class="quiz_a_list2" data-answer="1">
+                            <button class="js-answer">Integrate into Technology<img src="../img/icon/icon-arrow.svg"></button>
+                        </li>
+                        <li class="quiz_a_list3" data-answer="2">
+                            <button class="js-answer">Information on Tool<img src="../img/icon/icon-arrow.svg"></button>
+                        </li>
                     </ul>
+                    <div class="quiz_a_correct js-answerBox">
+                        <p class="quiz_a_correct_title js-answerTitle"></p>
+                        <p class="quiz_a_correct_content">
+                        <span class="quiz_a_correct_content_label">A</span>
+                        <span class="js-answerText"></span>
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="quiz4">
+            <div class="quiz4 js-quiz" data-quiz="3">
                 <div class="quiz_q">
                     <div class="quiz_q_title">Q4</div>
                     <p class="quiz_q_content">
@@ -130,17 +169,30 @@
                 <div class="quiz_a">
                     <div class="quiz_a_title">A</div>
                     <ul class="quiz_a_list">
-                        <li class="quiz_a_list1">Society 5.0<img src="../img/icon/icon-arrow.svg"></li>
-                        <li class="quiz_a_list2">CyPhy<img src="../img/icon/icon-arrow.svg"></li>
-                        <li class="quiz_a_list3">SDGs<img src="../img/icon/icon-arrow.svg"></li>
+                        <li class="quiz_a_list1" data-answer="0">
+                            <button class="js-answer">Society 5.0<img src="../img/icon/icon-arrow.svg"></button>
+                        </li>
+                        <li class="quiz_a_list2" data-answer="1">
+                            <button class="js-answer">CyPhy<img src="../img/icon/icon-arrow.svg"></button>
+                        </li>
+                        <li class="quiz_a_list3" data-answer="2">
+                            <button class="js-answer">SDGs<img src="../img/icon/icon-arrow.svg"></button>
+                        </li>
                     </ul>
+                    <div class="quiz_a_correct js-answerBox">
+                        <p class="quiz_a_correct_title js-answerTitle"></p>
+                        <p class="quiz_a_correct_content">
+                        <span class="quiz_a_correct_content_label">A</span>
+                        <span class="js-answerText"></span>
+                        </p>
+                    </div>
                 </div>
                 <div class="quiz_quote">
                     <img src="../img/icon/icon-note.svg">
                     <p>Society5.0 - 科学技術政策 - 内閣府</p>
                 </div>
             </div>
-            <div class="quiz5">
+            <div class="quiz5 js-quiz" data-quiz="4">
                 <div class="quiz_q">
                     <div class="quiz_q_title">Q5</div>
                     <p class="quiz_q_content">
@@ -153,13 +205,26 @@
                 <div class="quiz_a">
                     <div class="quiz_a_title">A</div>
                     <ul class="quiz_a_list">
-                        <li class="quiz_a_list1">Web3.0<img src="../img/icon/icon-arrow.svg"></li>
-                        <li class="quiz_a_list2">NFT<img src="../img/icon/icon-arrow.svg"></li>
-                        <li class="quiz_a_list3">メタバース<img src="../img/icon/icon-arrow.svg"></li>
+                        <li class="quiz_a_list1" data-answer="0">
+                            <button class="js-answer">Web3.0<img src="../img/icon/icon-arrow.svg"></button>
+                        </li>
+                        <li class="quiz_a_list2" data-answer="1">
+                            <button class="js-answer">NFT<img src="../img/icon/icon-arrow.svg"></button>
+                        </li>
+                        <li class="quiz_a_list3" data-answer="2">
+                            <button class="js-answer">メタバース<img src="../img/icon/icon-arrow.svg"></button>
+                        </li>
                     </ul>
+                    <div class="quiz_a_correct js-answerBox">
+                        <p class="quiz_a_correct_title js-answerTitle"></p>
+                        <p class="quiz_a_correct_content">
+                        <span class="quiz_a_correct_content_label">A</span>
+                        <span class="js-answerText"></span>
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="quiz6">
+            <div class="quiz6 js-quiz" data-quiz="5">
                 <div class="quiz_q">
                     <div class="quiz_q_title">Q6</div>
                     <p class="quiz_q_content">
@@ -172,10 +237,23 @@
                 <div class="quiz_a">
                     <div class="quiz_a_title">A</div>
                     <ul class="quiz_a_list">
-                        <li class="quiz_a_list1">約2倍<img src="../img/icon/icon-arrow.svg"></li>
-                        <li class="quiz_a_list2">約5倍<img src="../img/icon/icon-arrow.svg"></li>
-                        <li class="quiz_a_list3">約11倍<img src="../img/icon/icon-arrow.svg"></li>
+                        <li class="quiz_a_list1" data-answer="0">
+                            <button class="js-answer">約2倍<img src="../img/icon/icon-arrow.svg"></button>
+                        </li>
+                        <li class="quiz_a_list2" data-answer="1">
+                            <button class="js-answer">約5倍<img src="../img/icon/icon-arrow.svg"></button>
+                        </li>
+                        <li class="quiz_a_list3" data-answer="2">
+                            <button class="js-answer">約11倍<img src="../img/icon/icon-arrow.svg"></button>
+                        </li>
                     </ul>
+                    <div class="quiz_a_correct js-answerBox">
+                        <p class="quiz_a_correct_title js-answerTitle"></p>
+                        <p class="quiz_a_correct_content">
+                        <span class="quiz_a_correct_content_label">A</span>
+                        <span class="js-answerText"></span>
+                        </p>
+                    </div>
                 </div>
                 <div class="quiz_quote">
                     <img src="../img/icon/icon-note.svg">

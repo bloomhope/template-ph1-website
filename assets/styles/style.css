@@ -374,6 +374,22 @@ footer{
 .quiz_a_list img{
     margin-left: 180px;
 }
+/*.quiz_a_list button{
+    border: none;
+    background-color: white;
+}*/
+.quiz_a_list_button{
+    border: none;
+    background-color: white;
+}
+/*.quiz_a_list button.is-selected{
+    background-color: #eff2f5;
+    border-color: #0071bc;
+}*/
+.quiz_a_list_button.is-selected{
+    background-color: #eff2f5;
+    border-color: #0071bc;
+}
 .quiz3_a_list{
     display: flex;
     justify-content: center;
@@ -383,11 +399,54 @@ footer{
 .quiz3_a_list img{
     margin-left: 80px;
 }
+.quiz3_a_list button{
+    border: none;
+    background-color: white;
+}
+.quiz_a_correct{
+    background-color: #fff2f5;
+    border-radius: 8px;
+    display: none;
+    margin: 16px 170px 16px 210px;
+    padding: 24px 40px;
+}
+.quiz_a_correct.is-correct {
+    display: block;
+}
+.quiz_a_correct.is-incorrect{
+    background-color: #eff2f5;
+    display: block;
+}
+.quiz_a_correct_title{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+}
+.quiz_a_correct_title.is-correct{
+    color: #e34e70;
+}
+.quiz_a_correct_title.is-incorrect{
+    color: #0071bc;
+}
+.quiz_a_correct_content{
+    align-items: baseline;
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    gap: 18px;
+    line-height: 1.8;
+    margin-top: 16px;
+}
+.quiz_a_correct_content_label{
+    font-family: "Plus Jakarta Sans", "Noto Sans JP", sans-serif;
+    font-size: 24px;
+}
 .quiz_quote{
     display: flex;
     background-color: #f6f6f6;
     border-radius: 8px;
-    margin: 0 185px 0 225px;
+    margin: 0 170px 0 210px;
 }
 .quiz_quote img{
     margin-left: 30px;
