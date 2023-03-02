@@ -40,6 +40,7 @@
   }
   // trueかfalseで出力する文字列を出し分ける
   //targetという仮引数を立てて何も入っていないものをinnerTextで取り出して　[isCorrectの関数に対する式（71行目）がtureなら'正解！'と表示しfalseなら'不正解...'と表示する] のを入れる（76行目でtargetにanswerTitleを当てはめる→js-answerTitleというクラス名がついているタグに[]の内容を適用）
+  
   const setTitle = (target, isCorrect) => {
     target.innerText = isCorrect ? '正解！' : '不正解...';
   }
@@ -67,7 +68,7 @@
         // 全てのボタンを非活性化
         setDisabled(answers);
 
-        // 正解ならtrue, 不正解ならfalseをcheckCorrectに格納
+        // 正解ならtrue, 不正解ならfalseをisCorrectに格納
         const isCorrect = CORRECT_ANSWERS[selectedQuiz].index === selectedAnswer;
 
         //正しい答えを表示

@@ -173,7 +173,8 @@
    * @param target {Element}
    * @param isCorrect {boolean}
    */
-  //targetという仮引数を立てて何も入っていないものをinnerTextで取り出して [isCorrectの関数に対する式（211行目）がtureなら'正解！'と表示しfalseなら'不正解...'と表示する] のを入れる（215行目でtargetにanswerTitleを当てはめる→js-answerTitleというクラス名がついているタグに[]の内容を適用）
+  //targetという仮引数を立てて(targetというラベルがついた空箱）何も入っていないものをinnerTextで取り出して [isCorrectの関数に対する式（211行目）がtureなら'正解！'と表示しfalseなら'不正解...'と表示する] のを入れる（215行目でtargetにanswerTitleを当てはめる→js-answerTitleというクラス名がついているタグに[]の内容を適用）
+  //178行目と179行目のisCorrectは仮で立ててるだけだから他の文字でもOK→最終的には216行目で212行目のisCorrectを当てはめてる
   const setTitle = (target, isCorrect) => {
     target.innerText = isCorrect ? '正解！' : '不正解...';
   }
